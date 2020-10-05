@@ -22,23 +22,23 @@ export default {
 
     methods: {
         mutant(id) {
-            this.$store.commit('changeCheck', id)
-            return this.$store.state.checked[id]
+            this.$store.commit('placeSchema/changeCheck', id)
+            return this.$store.state.placeSchema.checked[id]
         },
     },
 
     computed: {
         checked() {
-            return this.$store.state.checked[this.index]
+            return this.$store.state.placeSchema.checked[this.index]
         },
 
         checkedBroken: {
             get: function() {
-                return this.$store.state.checked[this.index]
+                return this.$store.state.placeSchema.checked[this.index]
             },
 
             set: function(id) {
-                this.$store.commit('changeCheck', id)
+                this.$store.commit('placeSchema/changeCheck', id)
             }
         },
     },

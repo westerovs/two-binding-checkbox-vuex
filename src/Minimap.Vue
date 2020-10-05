@@ -21,7 +21,7 @@ export default {
     },
     computed: {
         seats() {
-            return this.$store.state.checked
+            return this.$store.state.placeSchema.checked
         },
     }
 }

@@ -18,13 +18,13 @@ export default {
         // action
 
         // 1 запрос с сервера
-        let payLoad = {
+        const payLoad = {
             0: true,
             1: false,
             2: true,
         }
 
-        this.$store.dispatch('server', payLoad)
+        this.$store.dispatch('placeSchema/server', payLoad)
     }
 };
 </script>
