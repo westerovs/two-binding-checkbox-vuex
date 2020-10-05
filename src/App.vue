@@ -25,6 +25,7 @@ export default {
         }
 
         this.$store.dispatch('placeSchema/server', payLoad)
+
     }
 };
 </script>
